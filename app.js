@@ -15,9 +15,7 @@ const connectDB = () => {
       .then((c) => console.log(`Database Connected with ${c.connection.host}`))
       .catch((e) => console.log(e));
   };
-config({
-    path: "./data/config.env",
-  });
+
 const app=express();
 app.use(express.json());
 connectDB();
